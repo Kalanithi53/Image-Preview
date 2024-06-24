@@ -1,16 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 import QueryImageComponent from './component/Image';
-import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <Router>
-   
-        <Routes>
-          <Route path="/image" element={<QueryImageComponent />} />
-        </Routes>
-   
+      <Routes>
+        <Route path="/image/*" element={<QueryImageComponent />} />
+      </Routes>
     </Router>
   );
 }
