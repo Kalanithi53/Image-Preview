@@ -21,7 +21,7 @@ const QueryImageComponent = () => {
         src={`https://${imageUrl}`} 
             alt="Query"
             width={adjustedHeight}
-height={auto}
+            height={auto}
             className='items-center mt-10 mx-auto'
             onLoad={handleImageLoad}
         />
