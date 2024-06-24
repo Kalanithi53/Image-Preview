@@ -4,12 +4,13 @@ import '../App.css';
 
 const QueryImageComponent = () => {
     const location = useLocation();
+
     const path = location.pathname+location.search;
 
-    const imageUrl = path.replace('/image/', '');
+    const imageUrl = path.replace('/image/https:/', '');
 
     return (
-        <img src={imageUrl} alt="Query" width="700" className='items-center mt-10 mx-auto' />
+        <img src={`https://${imageUrl}`} alt="Query" width="700" className='items-center mt-10 mx-auto' />
     );
 };
 
