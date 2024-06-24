@@ -6,12 +6,14 @@ const QueryImageComponent = () => {
     const location = useLocation();
     const path = location.pathname +location.search;
     const imageUrl = path.replace('/image/https:/', '');
-    const [adjustedHeight, setAdjustedHeight] = useState('800px');
+    const [adjustedHeight, setAdjustedHeight] = useState("auto");
+    const [width, setwidth] = useState("900px");
     
     const handleImageLoad = (event) => {
         const imageHeight = event.target.naturalHeight;
         if (imageHeight > 600) {
             setAdjustedHeight('450px');
+            setwidth('auto')
         }
         
     };
@@ -20,8 +22,8 @@ const QueryImageComponent = () => {
         <img
         src={`https://${imageUrl}`} 
             alt="Query"
-            width={adjustedHeight}
-            height={"auto"}
+            width={width}
+            height={adjustedHeight}
             className='items-center mt-10 mx-auto'
             onLoad={handleImageLoad}
         />
