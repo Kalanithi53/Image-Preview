@@ -5,7 +5,7 @@ import '../App.css';
 const QueryImageComponent = () => {
     const location = useLocation();
     const path = location.pathname+location.search;
-    console.log(path)
+
     const imageUrl = path.replace('/image/', '');
 
     return (
