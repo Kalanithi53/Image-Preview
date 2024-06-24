@@ -13,7 +13,7 @@ const QueryImageComponent = () => {
         const imageHeight = event.target.naturalHeight;
         if (imageHeight > 600) {
             setAdjustedHeight('450px');
-            setwidth('auto')
+            setwidth('600px')
         }
         
     };
