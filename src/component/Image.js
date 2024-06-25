@@ -45,7 +45,7 @@ export default function ImageComponent  () {
         <>
             <img
                 src={`https://${imageUrl}`}
-                alt="Query"
+                alt={`https://${imageUrl}`}
                 width={width}
                 height={adjustedHeight}
                 className='items-center mt-10 mx-auto'
