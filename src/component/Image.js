@@ -51,7 +51,7 @@ const QueryImageComponent = () => {
                 className='items-center mt-10 mx-auto'
                 onLoad={handleImageLoad}
             />
-            <div className='fixed mb-10 bottom-0'>
+            {/* <div className='fixed mb-10 bottom-0'>
                 <div className='w-[100px] border border-gray shadow-lg rounded-[10px] flex p-2 divide-x divide-slate-950 bg-white'>
                     <div className='w-[50%] cursor-pointer grid justify-items-start' onClick={handleImageIn}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
@@ -64,7 +64,7 @@ const QueryImageComponent = () => {
                         </svg>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 };
