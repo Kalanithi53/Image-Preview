@@ -40,7 +40,7 @@ export default function ImageComponent  () {
             setWidth(`${currentWidth - 100}px`);
         }
     };
-
+    
     return (
         <>
             <img
