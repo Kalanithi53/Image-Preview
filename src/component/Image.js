@@ -14,10 +14,10 @@ export default function ImageComponent  () {
         const imageWidth = event.target.naturalWidth;
         if (imageHeight > 600) {
             // setAdjustedHeight('450px');
-            setWidth('400px');
+            setWidth('500px');
         }
         if(imageWidth < 400){
-            setWidth('400px');
+            setWidth('500px');
         }
     };
 
