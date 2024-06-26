@@ -11,9 +11,13 @@ export default function ImageComponent  () {
 
     const handleImageLoad = (event) => {
         const imageHeight = event.target.naturalHeight;
+        const imageWidth = event.target.naturalWidth;
         if (imageHeight > 600) {
             setAdjustedHeight('450px');
             setWidth('600px');
+        }
+        if(imageWidth < 400){
+            setWidth('400px');
         }
     };
 
