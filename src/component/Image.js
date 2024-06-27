@@ -10,7 +10,7 @@ export default function ImageComponent  () {
     const path = location.pathname + location.search;
     const imageUrl = path.replace('/image/https:/', '');
     const [adjustedHeight, setAdjustedHeight] = useState("auto");
-    const [width, setWidth] = useState("500px");
+    const [width, setWidth] = useState("400px");
 
     const handleImageLoad = (event) => {
         const imageHeight = event.target.naturalHeight;
