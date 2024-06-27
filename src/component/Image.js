@@ -14,9 +14,9 @@ export default function ImageComponent() {
 
 
     return (
-        <div className=''>
+        <div className='mt-10'>
             
-            <InnerImageZoom src={`https://${imageUrl}`} width={"500px"}  />
+            <InnerImageZoom src={`https://${imageUrl}`} width={"600px"}  />
            
         </div>
     );
