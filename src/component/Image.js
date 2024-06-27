@@ -16,7 +16,7 @@ export default function ImageComponent  () {
             // setAdjustedHeight('450px');
             setWidth('500px');
         }
-        if(imageWidth < 400){
+        if(imageWidth < 400 || imageWidth > 500){
             setWidth('500px');
         }
     };
