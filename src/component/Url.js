@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import '../App.css';
+import { useNavigate } from 'react-router-dom';
 
 function Url() {
   const [url, setUrl] = useState('');
-
+const navigate=useNavigate();
   return (
     <>
       <div className="bg-white w-full h-full">
@@ -20,6 +21,12 @@ function Url() {
                   name="url" 
                   value={url} 
                   onChange={(e) => setUrl(e.target.value)} 
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter') {
+                      navigate(`/image/${url}`);
+                      
+                    }
+                  }}
                 />
                 <a 
                   href={`/image/${url}`} 
